@@ -18,4 +18,5 @@ genrule(
     srcs = ["//:STATIC_INPUT"],
     outs = ["BazelTest.java"],
     cmd = GENERATOR_CMD,
+    visibility = ["//visibility:public"],
 )
